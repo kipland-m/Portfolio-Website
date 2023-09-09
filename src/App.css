@@ -29,12 +29,14 @@
 .blog-post-title{
   font-size: 20px;
 }
+
 t {
   top: 0; /* Position at the top within SlimColumn */
   left: 0; 
   display: flex;
   padding-left: 20px;
 }
+
 .navbar {    
   list-style-type: none;  /* Remove default padding */
   position: absolute;
@@ -47,6 +49,7 @@ t {
 @media (max-width: 768px) {
   .navbar {
     font-size: 10px;
+    padding-top: 12px;
   }
 }
 
