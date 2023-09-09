@@ -7,7 +7,11 @@
   position: relative; /* Add a border if desired */
 }
 
-
+@media (max-width: 768px) {
+  .slim-column {
+    width: 300px;
+  }
+}
 
 .intro{
   padding-top: 30px;
@@ -16,10 +20,21 @@
 
 }
 
+@media (max-width: 768px) {
+  .intro {
+    font-size: 30px;
+  }
+}
+
 .blog-post-title{
   font-size: 20px;
 }
-
+t {
+  top: 0; /* Position at the top within SlimColumn */
+  left: 0; 
+  display: flex;
+  padding-left: 20px;
+}
 .navbar {    
   list-style-type: none;  /* Remove default padding */
   position: absolute;
@@ -27,6 +42,12 @@
   right: 0; /* Position at the right within SlimColumn */
   display: flex;
   padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 10px;
+  }
 }
 
 .navbar li {
