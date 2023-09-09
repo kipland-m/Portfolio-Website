@@ -7,17 +7,6 @@ import Home from './Home';
 import Resume from './Resume';
 import Contact from './Contact';
 
-
-// Will contain all data for each post
-const blogPosts = [
-  {
-    title: 'Recent',
-    author: 'John Doe',
-    date: 'September 1, 2023',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
-  }
-];
-
 function Navbar() {
   return (
     <nav>
