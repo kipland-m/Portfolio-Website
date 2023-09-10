@@ -27,8 +27,7 @@ const blogPosts = [
         {blogPosts.map((post, index) => (
           <div className="blog-post" key={index}>
             <div className="blog-post-image">
-              <img src={post.image} alt={post.title}
-              style={{ width: '300px', height: '150px'}} />
+              <img src={post.image} alt={post.title}/>
             </div>
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
