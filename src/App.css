@@ -1,32 +1,59 @@
+/* DESKTOP SPECIFIC */
 @media screen and (min-width: 769px) {
   /* Styles for screens with a minimum width of 769px */
   /* Desktop-specific styles can be applied here */
   .slim-column {
-    width: 800px; /* Adjust the width as needed */
+    width: 800px; 
+    margin: 20px auto;
+    padding: 20px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  .blog-post-image img {
+    max-width: 400px; 
+    height: 150;
+  }
+  .intro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
+}
+/* DESKTOP SPECIFIC */
+
+
+
+
+/* MOBILE SPECIFIC */
+@media (max-width: 768px) {
+  .slim-column {
+    width: 300px;
     margin: 20px auto; /* Center the column horizontally */
     padding: 20px; /* Add padding for spacing inside the column */
     background-color: #f0f0f0; /* Set a background color */
     border: 1px solid #ccc;
-    position: relative; /* Add a border if desired */
+    position: relative;
   }
-  .blog-post-image img {
-    max-width: 400px; /* Ensure the image fits within the container */
-    height: 150; /* Maintain the aspect ratio of the image */
-  }
-}
-
-@media (max-width: 768px) {
   .intro {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 30px;
   }
   .blog-post-image img {
-    max-width: 200px; /* Ensure the image fits within the container */
-    height: 150px; /* Maintain the aspect ratio of the image */
+    max-width: 200px; 
+    height: 150px; 
   }
-
+  .blog-post-text {
+    font-size: 12px;
+  }
 }
+/* MOBILE SPECIFIC */
 
 
+
+
+/* Blog Post CSS */
 .blog-post{
   display: flex;
   align-items: center;
@@ -39,41 +66,14 @@
 .blog-post-content{
   flex: 2
 }
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .slim-column {
-    width: 300px;
-    margin: 20px auto; /* Center the column horizontally */
-    padding: 20px; /* Add padding for spacing inside the column */
-    background-color: #f0f0f0; /* Set a background color */
-    border: 1px solid #ccc;
-    position: relative;
-  }
-}
-
-.intro{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 40px;
-
-}
-
-@media (max-width: 768px) {
-  .intro {
-    font-size: 30px;
-  }
-}
-
 .blog-post-title{
   font-size: 20px;
 }
+/* Blog Post CSS */
+
+
+
+
 
 t {
   top: 0; /* Position at the top within SlimColumn */
