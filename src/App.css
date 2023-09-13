@@ -35,7 +35,7 @@
 /* MOBILE SPECIFIC */
 @media (max-width: 768px) {
   .slim-column {
-    width: 350px;
+    width: 340px;
     margin: 20px auto; /* Center the column horizontally */
     padding: 20px; /* Add padding for spacing inside the column */
     background-color: #f0f0f0; /* Set a background color */
@@ -65,7 +65,7 @@
 
 /* Blog Post CSS */
 .blog-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .blog-post{
