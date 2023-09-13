@@ -7,17 +7,17 @@ import stock1 from './images/stock1.webp'
 const blogPosts = [
     {
       image: stock0,
-      title: 'Recent',
+      title: 'Tech Stuff',
       author: 'John Doe',
       date: 'September 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lorem id purus egestas pellentesque.',
     },
     {
         image: stock1,
-        title: 'Recent',
+        title: 'Some Project',
         author: 'John Doe',
         date: 'September 1, 2023',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lorem id purus egestas pellentesque.',
     }
   ];
 
@@ -49,6 +49,10 @@ function Home() {
       APIs and data manipulation. 
       Explore my portfolio to see how I leverage 
       Python for impactful solutions.
+      </div>
+
+      <div className="blog-title">
+      Selected work
       </div>
       <BlogPost blogPosts={blogPosts} />
 

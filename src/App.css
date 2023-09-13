@@ -14,6 +14,9 @@
     max-width: 400px; 
     height: 150;
   }
+  .blog-post-content{
+    font-size: 20px;
+  }
   .intro{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -54,6 +57,9 @@
 
 
 /* Blog Post CSS */
+.blog-title {
+  font-size: 20px;
+}
 .blog-post{
   display: flex;
   align-items: center;
@@ -64,7 +70,9 @@
   margin-right: 20px;
 }
 .blog-post-content{
-  flex: 2
+  flex: 2;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
 .blog-post-title{
   font-size: 20px;
@@ -74,9 +82,8 @@
 
 
 
-
 t {
-  top: 0; /* Position at the top within SlimColumn */
+  top: 0; 
   left: 0; 
   display: flex;
   padding-left: 20px;
