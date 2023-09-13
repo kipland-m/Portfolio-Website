@@ -1,7 +1,5 @@
 /* DESKTOP SPECIFIC */
 @media screen and (min-width: 769px) {
-  /* Styles for screens with a minimum width of 769px */
-  /* Desktop-specific styles can be applied here */
   .slim-column {
     border-radius: 5px;
     width: 800px; 
@@ -36,9 +34,9 @@
 @media (max-width: 768px) {
   .slim-column {
     width: 340px;
-    margin: 20px auto; /* Center the column horizontally */
-    padding: 20px; /* Add padding for spacing inside the column */
-    background-color: #f0f0f0; /* Set a background color */
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
     border: 1px solid #ccc;
     position: relative;
   }
@@ -91,16 +89,15 @@ t {
   top: 0; 
   left: 0; 
   display: flex;
-  padding-left: 20px;
 }
 /* Kipland Melton*/
 
 /* NABAR */
 .navbar {    
-  list-style-type: none;  /* Remove default padding */
+  list-style-type: none;
   position: absolute;
-  top: 0; /* Position at the top within SlimColumn */
-  right: 0; /* Position at the right within SlimColumn */
+  top: 0; 
+  right: 0; 
   display: flex;
   padding-right: 20px;
 }
