@@ -3,6 +3,7 @@
   /* Styles for screens with a minimum width of 769px */
   /* Desktop-specific styles can be applied here */
   .slim-column {
+    border-radius: 5px;
     width: 800px; 
     margin: 20px auto;
     padding: 20px; 
@@ -15,12 +16,15 @@
     height: 150;
   }
   .blog-post-content{
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .blog-post-title{
+    font-size: 30px;
   }
   .intro{
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: 40px;
+    font-size: 44px;
   }
 }
 /* DESKTOP SPECIFIC */
@@ -31,7 +35,7 @@
 /* MOBILE SPECIFIC */
 @media (max-width: 768px) {
   .slim-column {
-    width: 300px;
+    width: 350px;
     margin: 20px auto; /* Center the column horizontally */
     padding: 20px; /* Add padding for spacing inside the column */
     background-color: #f0f0f0; /* Set a background color */
@@ -42,6 +46,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 30px;
+  }
+  .blog-post-title{
+    font-size: 18px;
   }
   .blog-post-image img {
     max-width: 200px; 
@@ -58,7 +65,8 @@
 
 /* Blog Post CSS */
 .blog-title {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 .blog-post{
   display: flex;
@@ -74,21 +82,20 @@
   overflow: hidden; 
   text-overflow: ellipsis; 
 }
-.blog-post-title{
-  font-size: 20px;
-}
 /* Blog Post CSS */
 
 
 
-
+/* Kipland Melton*/
 t {
   top: 0; 
   left: 0; 
   display: flex;
   padding-left: 20px;
 }
+/* Kipland Melton*/
 
+/* NABAR */
 .navbar {    
   list-style-type: none;  /* Remove default padding */
   position: absolute;
@@ -121,3 +128,5 @@ t {
 .navbar a:hover {
   text-decoration: underline; /* Apply an underline on hover */
 }
+
+/* NABAR */

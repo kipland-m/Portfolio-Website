@@ -6,18 +6,18 @@ import stock1 from './images/stock1.webp'
 // Will contain all data for each post
 const blogPosts = [
     {
-      image: stock0,
-      title: 'Tech Stuff',
-      author: 'John Doe',
-      date: 'September 1, 2023',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lorem id purus egestas pellentesque.',
+        image: stock0,
+        title: 'Tech Stuff',
+        author: 'John Doe',
+        date: 'September 1, 2023',
+        content: 'A simple Python file sorting program meant to clean a single directory.',
     },
     {
         image: stock1,
         title: 'Some Project',
         author: 'John Doe',
         date: 'September 1, 2023',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lorem id purus egestas pellentesque.',
+        content: 'A blockchain powered message board built on Solana.'
     }
   ];
 
