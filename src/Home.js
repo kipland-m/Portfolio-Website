@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 import stock0 from './images/stock0.jpg'
 import stock1 from './images/stock1.webp'
@@ -33,6 +35,9 @@ const blogPosts = [
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-text">{post.content}</p>
+              <Link to="/">View more</Link>
+            </div>
+            <div className="view-full-post">
             </div>
           </div>
         ))}
