@@ -15,6 +15,12 @@ const blogPosts = [
         content: 'A simple Python file sorting program meant to clean a single directory.',
     },
     {
+        title: 'Tech Stuff',
+        author: 'John Doe',
+        date: 'September 1, 2023',
+        content: 'A simple Python file sorting program meant to clean a single directory.',
+    },
+    {
         image: stock1,
         title: 'Some Project',
         author: 'John Doe',
