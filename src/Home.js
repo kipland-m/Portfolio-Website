@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 import stock0 from './images/stock0.jpg'
@@ -10,21 +10,13 @@ const blogPosts = [
     {
         image: stock0,
         title: 'Tech Stuff',
-        author: 'John Doe',
-        date: 'September 1, 2023',
-        content: 'A simple Python file sorting program meant to clean a single directory.',
-    },
-    {
-        title: 'Tech Stuff',
-        author: 'John Doe',
-        date: 'September 1, 2023',
+        postID: 'post1',
         content: 'A simple Python file sorting program meant to clean a single directory.',
     },
     {
         image: stock1,
         title: 'Some Project',
-        author: 'John Doe',
-        date: 'September 1, 2023',
+        postID: 'post2',
         content: 'A blockchain powered message board built on Solana.'
     }
   ];
@@ -41,9 +33,7 @@ const blogPosts = [
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-text">{post.content}</p>
-              <Link to="/">View more</Link>
-            </div>
-            <div className="view-full-post">
+              <Link to={post.postID}>View more</Link>
             </div>
           </div>
         ))}
@@ -66,7 +56,6 @@ function Home() {
       Selected work
       </div>
       <BlogPost blogPosts={blogPosts} />
-
      </div>
     );
 }

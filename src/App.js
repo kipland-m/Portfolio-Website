@@ -6,6 +6,9 @@ import Home from './Home';
 import Resume from './Resume';
 import Contact from './Contact';
 
+import Post1 from './posts/Post1';
+import Post2 from './posts/Post2';
+
 function Navbar() {
   return (
     <nav>
@@ -32,6 +35,9 @@ function App() {
           <Route path="/" exact element={<Home/>} />
           <Route path="/resume" element={<Resume/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/post1" element={<Post1/>} />
+          <Route path="/post2" element={<Post2/>} />
+
           </Routes>
       </header>
     </div>
