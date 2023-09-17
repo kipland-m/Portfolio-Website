@@ -26,6 +26,11 @@
     margin-top: 15%;
     margin-left: 3%;
   }
+  .intro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 44px;
+  }
 }
 /* DESKTOP SPECIFIC */
 
@@ -89,6 +94,11 @@
   .blog-post-text {
     font-size: 12px;
   }
+  .intro{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
 }
 /* MOBILE SPECIFIC */
 
@@ -99,6 +109,7 @@
 .blog-title {
   font-size: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .blog-post{
   display: flex;

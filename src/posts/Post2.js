@@ -1,6 +1,12 @@
+import React from "react";
+
 function Post2() {
     return(
-    <p>This is a test for post2</p>
+    <div className="alt-page-container">
+      <div className='intro'>
+        this is a test for post2
+      </div>
+     </div>
     );
 }
 

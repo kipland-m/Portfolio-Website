@@ -47,21 +47,29 @@ function Home() {
     <div className="home">
 
     <div className="image-container">
-      <img src={shapes} alt="some shapes" preload="true"/>
-
-      <div className='text-overlay'>
-      I'm a Python developer with expertise in
-      APIs and data manipulation. 
-      Explore my portfolio to see how I leverage 
-      Python for impactful solutions.
-      </div>
+    
+    <img src={shapes} alt="some shapes" preload="true"/>
+        <div className='text-overlay'>
+        I'm a Python developer with expertise in
+        APIs and data manipulation. 
+        Explore my portfolio to see how I leverage 
+        Python for impactful solutions.
+        </div>
     </div>
 
-      <div className="blog-title">
+    <div className="greetings-text">
+    👋 Hello, I'm Kipland, a Data Engineer and Python Developer based in Bowling Green, KY. Currently working at Bluegrass Supply Chain Services, I specialize in developing and managing internal Excel data connections, working on projects that optimize data efficiency and unlock valuable insights.
+    </div>
+
+    
+
+    <div className="blog-title">
       Selected work
-      </div>
-      <BlogPost blogPosts={blogPosts} />
-     </div>
+    </div>
+
+    <BlogPost blogPosts={blogPosts} />
+
+    </div>
     );
 }
 
