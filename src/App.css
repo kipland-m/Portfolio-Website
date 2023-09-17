@@ -23,6 +23,8 @@
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 44px;
+    margin-top: 15%;
+    margin-left: 3%;
   }
 }
 /* DESKTOP SPECIFIC */
@@ -33,7 +35,7 @@
 /* global styles */
 .App{
   background: linear-gradient(rgba(2,0,36,1) 0%, rgba(44,31,79,1) 100%, rgba(15,27,78,1) 100%);
-  background-color: line; /* Set your desired background color */
+  background-color: line; 
   display: flex;
   min-height: 100vh;
 }
@@ -48,17 +50,14 @@
 
 .image-container img {
   width: 100%;
-  height: 100%;/* Ensure the image covers the container */
+  height: 100%;
 }
 
 .text-overlay{
-  margin-top: 30%;
-  top: 0;
   position: absolute;
+  top: 0;
+
 }
-
-
-
 /* global styles */
 
 
@@ -77,7 +76,8 @@
   .text-overlay {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
+    margin-top: 20%;
   }
   .blog-post-title{
     font-size: 18px;
