@@ -37,7 +37,6 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
           <Route path="/post1" element={<Post1/>} />
           <Route path="/post2" element={<Post2/>} />
-
           </Routes>
       </header>
     </div>

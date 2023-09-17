@@ -47,7 +47,7 @@ function Home() {
     <div className="home">
 
     <div className="image-container">
-      <img src={shapes} alt="Your Image"/>
+      <img src={shapes} alt="some shapes"/>
 
       <div className='text-overlay'>
       I'm a Python developer with expertise in
