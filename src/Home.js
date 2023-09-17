@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import stock0 from './images/stock0.jpg'
 import stock1 from './images/stock1.webp'
+import shapes from './images/intro-shapes.png'
 
 // Will contain all data for each post
 const blogPosts = [
@@ -33,7 +34,7 @@ const blogPosts = [
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-text">{post.content}</p>
-              <Link to={post.postID}>View more</Link>
+              <Link className='view-more' to={post.postID}>View more</Link>
             </div>
           </div>
         ))}
@@ -45,12 +46,16 @@ function Home() {
     return(
     <div className="home">
 
-      <div className='intro'>
+    <div className="image-container">
+      <img src={shapes} alt="Your Image"/>
+
+      <div className='text-overlay'>
       I'm a Python developer with expertise in
       APIs and data manipulation. 
       Explore my portfolio to see how I leverage 
       Python for impactful solutions.
       </div>
+    </div>
 
       <div className="blog-title">
       Selected work
