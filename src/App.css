@@ -35,6 +35,9 @@
 
 .slim-column{
   height: 100%;
+  background-color: #0f1b4e;
+  color: #f0f0f0;
+  border: none;
 }
 
 
@@ -132,7 +135,7 @@ t {
 
 .navbar a {
   text-decoration: none;
-  color: #333; /* Set the text color for the navbar links */
+  color: #f0f0f0; /* Set the text color for the navbar links */
 }
 
 .navbar a:hover {
