@@ -27,6 +27,15 @@
 }
 /* DESKTOP SPECIFIC */
 
+.App{
+  background-color: #0f1b4e; /* Set your desired background color */
+  display: flex;
+  min-height: 100vh;
+}
+
+.slim-column{
+  height: 100%;
+}
 
 
 
@@ -80,11 +89,8 @@
   overflow: hidden; 
   text-overflow: ellipsis; 
 }
-.view-full-post{
-  
-
-}
 /* Blog Post CSS */
+
 
 
 
@@ -95,6 +101,9 @@ t {
   display: flex;
 }
 /* Kipland Melton*/
+
+
+
 
 /* NABAR */
 .navbar {    
