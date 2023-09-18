@@ -60,7 +60,7 @@ function Home() {
     <div className="greetings-text">
     👋 Hello, I'm Kipland, Python Developer based in Bowling Green, KY. 
     Currently working at Bluegrass Supply Chain Services, I specialize in developing internal API
-    connections, working on projects that optimize data efficiency and unlock valuable insights.
+    controllers, working on projects that optimize data efficiency and unlock valuable insights.
     </div>
     <div className="github-button">
     <Link to="https://github.com/kipland-m" className="view-more">👨‍💻 View my GitHub!</Link>
