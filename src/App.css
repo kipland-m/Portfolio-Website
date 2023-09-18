@@ -61,7 +61,9 @@
 .text-overlay{
   position: absolute;
   top: 0;
-
+}
+.github-button{
+  margin-top: 10px;
 }
 /* global styles */
 
@@ -99,6 +101,9 @@
     padding-bottom: 40px;
     font-size: 20px;
   }
+  .greetings-text{
+    font-size: 14px;
+  }
 }
 /* MOBILE SPECIFIC */
 
@@ -110,6 +115,7 @@
   font-size: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-weight: bold;
 }
 .blog-post{
   display: flex;
