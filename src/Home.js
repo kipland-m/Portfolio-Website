@@ -50,17 +50,17 @@ function Home() {
     
     <img src={shapes} alt="some shapes" preload="true"/>
         <div className='text-overlay'>
-        I'm a Python developer with expertise in
+        I'm a developer with expertise in
         APIs and data manipulation. 
         Explore my portfolio to see how I leverage 
-        Python for impactful solutions.
+        code for impactful solutions.
         </div>
     </div>
 
     <div className="greetings-text">
-    👋 Hello, I'm Kipland, Python Developer based in Bowling Green, KY. 
+    👋 Hello, I'm Kipland, a developer based in Bowling Green, KY. 
     Currently working at Bluegrass Supply Chain Services, I specialize in developing internal API
-    controllers, working on projects that optimize data efficiency and unlock valuable insights.
+    controllers, optimizing data efficiency and unlocking valuable insights.
     </div>
     <div className="github-button">
     <Link to="https://github.com/kipland-m" className="view-more">👨‍💻 View my GitHub!</Link>

@@ -24,7 +24,8 @@
     padding-bottom: 40px;
     font-size: 44px;
     margin-top: 15%;
-    margin-left: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
   }
   .intro{
     padding-top: 40px;
@@ -86,7 +87,9 @@
     padding-bottom: 20px;
     font-size: 20px;
     margin-top: 20%;
-  }
+    margin-left: 5%;
+    margin-right: 5%;
+}
   .blog-post-title{
     font-size: 18px;
   }
