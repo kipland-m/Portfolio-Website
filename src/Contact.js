@@ -4,7 +4,7 @@ function Contact() {
     return(
     <div className="alt-page-container">
       <div className='intro'>
-      phone number n stuff
+      Contact Me
       </div>
      </div>
     );

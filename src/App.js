@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './Home';
-import Resume from './Resume';
 import Contact from './Contact';
 
 import Post1 from './posts/Post1';
@@ -14,7 +13,6 @@ function Navbar() {
     <nav>
       <ul class="navbar">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul> 
     </nav>
@@ -33,7 +31,6 @@ function App() {
 
           <Routes>
           <Route path="/" exact element={<Home/>} />
-          <Route path="/resume" element={<Resume/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/post1" element={<Post1/>} />
           <Route path="/post2" element={<Post2/>} />

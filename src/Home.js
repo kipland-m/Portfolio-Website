@@ -8,17 +8,26 @@ import shapes from './images/intro-shapes.png'
 
 // Will contain all data for each post
 const blogPosts = [
-    {
+      {
         image: stock0,
-        title: 'Tech Stuff',
-        postID: 'post1',
-        content: 'A simple Python file sorting program meant to clean a single directory.',
+        title: 'pz-portal',
+        postID: 'post2',
+        content: 'A blockchain powered message board built on Solana.',
+        github: "https://github.com/kipland-m/pz-portal"
+    },
+    {
+      image: stock0,
+      title: 'this website',
+      postID: 'post2',
+      content: 'See the repository that which this website deploys from.',
+      github: "https://github.com/kipland-m/portfolio-website"
     },
     {
         image: stock1,
-        title: 'Some Project',
-        postID: 'post2',
-        content: 'A blockchain powered message board built on Solana.'
+        title: 'dejunker',
+        postID: 'post1',
+        content: 'A simple Python file sorting program meant to clean a single directory.',
+        github: "https://github.com/kipland-m/dejunker"
     }
   ];
 
@@ -34,7 +43,7 @@ const blogPosts = [
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-text">{post.content}</p>
-              <Link className='view-more' to={post.postID}>View more</Link>
+              <Link className='view-more' to={post.github}>View on GitHub</Link>
             </div>
           </div>
         ))}
