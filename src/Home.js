@@ -9,25 +9,22 @@ import shapes from './images/intro-shapes.png'
 // Will contain all data for each post
 const blogPosts = [
       {
-        image: stock0,
         title: 'pz-portal',
-        postID: 'post2',
         content: 'A blockchain powered message board built on Solana.',
-        github: "https://github.com/kipland-m/pz-portal"
+        github: "https://github.com/kipland-m/pz-portal",
+        logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"]
     },
     {
-      image: stock0,
       title: 'this website',
-      postID: 'post2',
       content: 'See the repository that which this website deploys from.',
-      github: "https://github.com/kipland-m/portfolio-website"
+      github: "https://github.com/kipland-m/portfolio-website",
+      logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"]
     },
     {
-        image: stock1,
         title: 'dejunker',
-        postID: 'post1',
         content: 'A simple Python file sorting program meant to clean a single directory.',
-        github: "https://github.com/kipland-m/dejunker"
+        github: "https://github.com/kipland-m/dejunker",
+        logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"]
     }
   ];
 
@@ -36,14 +33,17 @@ const blogPosts = [
       <div className="blog-posts">
         {blogPosts.map((post, index) => (
           <div className="blog-post" key={index}>
-            <div className="blog-post-image">
-              <img src={post.image} alt={post.title}
-              style={{ borderRadius: '5px' }} />
+            <div className="blog-post-wrapper">
+            <div className="blog-post-logos">
+            {post.logos.map((logo, logoIndex) => (
+              <img src={logo} alt={`Logo ${logoIndex}`} key={logoIndex} style={{ width: '100px', marginRight: '20px' }} />
+            ))}
             </div>
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-text">{post.content}</p>
-              <Link className='view-more' to={post.github}>View on GitHub</Link>
+              <a className='view-more' href={post.github} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
             </div>
           </div>
         ))}
@@ -70,9 +70,6 @@ function Home() {
     👋 Hello, I'm Kipland, a developer based in Bowling Green, KY. 
     Currently working at Bluegrass Supply Chain Services, I specialize in developing internal API
     controllers, optimizing data efficiency and unlocking valuable insights.
-    </div>
-    <div className="github-button">
-    <Link to="https://github.com/kipland-m" className="view-more">👨‍💻 View my GitHub!</Link>
     </div>
 
     <div className="blog-title">
