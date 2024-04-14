@@ -23,14 +23,19 @@
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 44px;
-    margin-top: 15%;
+    margin-top: 16%;
     margin-left: 5%;
-    margin-right: 3%;
+    margin-right: 8%;
+    text-align: center;
   }
   .intro{
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 44px;
+  }
+  .greetings-text{
+    font-size: 20px;
+    margin-bottom: 50px;
   }
 }
 /* DESKTOP SPECIFIC */
@@ -69,6 +74,8 @@
   margin-top: 20px;
   
 }
+
+
 /* global styles */
 
 
