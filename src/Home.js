@@ -1,9 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
-
-import stock0 from './images/stock0.jpg'
-import stock1 from './images/stock1.webp'
 import shapes from './images/intro-shapes.png'
 
 // Will contain all data for each post
