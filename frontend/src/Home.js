@@ -3,21 +3,27 @@ import shapes from './images/intro-shapes.png'
 
 // Will contain all data for each post
 const blogPosts = [
-      {
-        title: 'pz-portal',
-        content: 'A blockchain powered message board built on Solana.',
-        github: "https://github.com/kipland-m/pz-portal",
-        logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"]
-    },
     {
-      title: 'this website',
+      title: 'This Website',
       content: 'See the repository that which this website deploys from.',
       github: "https://github.com/kipland-m/portfolio-website",
       logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"]
     },
     {
-        title: 'dejunker',
-        content: 'A simple Python file sorting program meant to clean a single directory.',
+      title: 'pz-portal',
+      content: 'A blockchain powered message board built on Solana.',
+      github: "https://github.com/kipland-m/pz-portal",
+      logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"]
+    },
+    {
+        title: 'WinSCP Automation Tool',
+        content: 'A Python program that interfaces into WinSCP and provides a simple interface and automation of file transfers.',
+        github: "https://github.com/kipland-m/winscp_transfer",
+        logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"]
+    },
+    {
+        title: 'Dejunker',
+        content: 'A Python file sorting program meant to clean a single directory.',
         github: "https://github.com/kipland-m/dejunker",
         logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"]
     }
