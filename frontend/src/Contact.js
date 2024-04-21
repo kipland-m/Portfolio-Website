@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -16,14 +17,19 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // You can implement form submission logic here, like sending the data to a backend server.
-        console.log(formData);
-        // Reset form fields after submission
-        setFormData({
-            name: "",
-            email: "",
-            message: ""
-        });
+        axios.post("http://localhost:8000/api/contact/", formData)
+            .then((response) => {
+                console.log("Message sent successfully:", response.data);
+                // Reset form fields after successful submission
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: ""
+                });
+            })
+            .catch((error) => {
+                console.error("Error sending message:", error);
+            });
     };
 
     return (

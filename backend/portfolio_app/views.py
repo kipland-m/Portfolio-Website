@@ -10,7 +10,7 @@ from .serializers import ContactMessageSerializer
 
 
 # create a class to handle contact form submission
-class CreateContactMessageAPIView(generics.CreateAPIView):
+class ContactMessageCreateAPIView(generics.CreateAPIView):
     queryset = ContactMessage.objects.all()
     serializer_class = ContactMessageSerializer
 
@@ -20,4 +20,5 @@ class CreateContactMessageAPIView(generics.CreateAPIView):
         message = 'Name: {}\nEmail: {}\n\n{}'.format(
             instance.name, instance.email, instance.message
         )
+        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, [settings.DEFAULT_TO_EMAIL])
         return Response(serializer.data)
