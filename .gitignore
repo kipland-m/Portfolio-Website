@@ -9,7 +9,7 @@
 /coverage
 
 # django
-/backend/backend/settings.py
+backend/backend/settings.py
 
 # production
 /build

@@ -133,4 +133,3 @@ EMAIL_HOST_USER = 'your-email@example.com'  # Your email address
 EMAIL_HOST_PASSWORD = 'your-email-password'  # Your email password
 DEFAULT_FROM_EMAIL = 'your-email@example.com'  # Your default sender email address
 DEFAULT_TO_EMAIL = 'recipient@example.com'  # Email where you want to receive contact messages
-# TESTING TO SEE IF .gitignore IS WORKING BEFORE I DOX MYSELF
