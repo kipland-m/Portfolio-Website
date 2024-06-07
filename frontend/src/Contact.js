@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from 'axios';
 
 function Contact() {
+    // corresponds to name email message in models.py
+    // on the backend
     const [formData, setFormData] = useState({
         name: "",
         email: "",
