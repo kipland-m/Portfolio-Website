@@ -7,13 +7,19 @@ const blogPosts = [
       title: 'This Website',
       content: 'See the repository that which this website deploys from.',
       github: "https://github.com/kipland-m/portfolio-website",
-      logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"]
+      logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"]
     },
     {
-      title: 'pz-portal',
+      title: 'PZ Portal',
       content: 'A blockchain powered message board built on Solana.',
       github: "https://github.com/kipland-m/pz-portal",
       logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg","https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"]
+    },
+    {
+      title: 'C Chat',
+      content: 'A simple terminal based chatroom (server and client) written in C.',
+      github: "https://github.com/kipland-m/cchat",
+      logos:["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"]
     },
     {
         title: 'WinSCP Automation Tool',
