@@ -69,7 +69,7 @@ function Home() {
 
     <div className="greetings-text">
     👋 Hello, I'm Kipland, a developer based in Bowling Green, KY. 
-    Currently working at Bluegrass Supply Chain Services, I specialize in developing internal API
+    Currently working at ECM Tek, LLC, I specialize in developing internal API
     controllers, optimizing data efficiency and unlocking valuable insights.
     </div>
 

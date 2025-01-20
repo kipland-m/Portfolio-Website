@@ -1,81 +1,29 @@
-import React, { useState } from "react";
-import axios from 'axios';
+import React from 'react';
+import './Contact.css';
 
-function Contact() {
-    // corresponds to name email message in models.py
-    // on the backend
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: ""
-    });
+const ContactPage = () => {
+  const contactInfo = [
+    { label: 'Email', value: 'kiplandmelton@gmail.com', link: 'mailto:kiplandmelton@gmail.com' },
+    { label: 'Twitter', value: '@kiplandvaughn', link: 'https://twitter.com/kiplandvaughn' },
+    { label: 'LinkedIn', value: 'Kipland Melton', link: 'https://linkedin.com/in/Kipland-Melton' },
+    { label: 'GitHub', value: 'kipland-m', link: 'https://github.com/kipland-m' },
+  ];
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
+  return (
+    <div className="container">
+      <h1 className="heading">Contact Me:</h1>
+      <ul className="list">
+        {contactInfo.map((item, index) => (
+          <li key={index} className="listItem">
+            <a href={item.link} target="_blank" rel="noopener noreferrer" className="link">
+              {item.value}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        axios.post("http://localhost:8000/api/contact/", formData)
-            .then((response) => {
-                console.log("Message sent successfully:", response.data);
-                // Reset form fields after successful submission
-                setFormData({
-                    name: "",
-                    email: "",
-                    message: ""
-                });
-            })
-            .catch((error) => {
-                console.error("Error sending message:", error);
-            });
-    };
+export default ContactPage;
 
-    return (
-        <div className="alt-page-container">
-            <div className='intro'>
-                <h2>Contact Me</h2>
-                <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label htmlFor="name">Name:</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="email">Email:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message">Message:</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                        ></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    );
-}
-
-export default Contact;
